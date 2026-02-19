@@ -1,5 +1,6 @@
 # wynnSpells
 A very barebones script to register wynn spells to be used by Figura
+It ain't perfect, but it's good enough for me
 
 ## How to use:
 There's not much to it, simply download wynnSpells.lua, put it in your model folder, dont forget to include ``local wynnSpells = require("wynnSpells")`` in your ``script.lua``, and it works right out of the box.
@@ -30,6 +31,10 @@ an optional variable to dictate how animations are played
 ``wynnSpells.anim_mode = "reset_each"``, when the SAME spell is cast, restart it's animation. Different spells however will play their animations on top of one another
 ``wynnSpells.anim_mode = "play_all"``, when the SAME spell is cast, ignore it it's animation is currently playing. Different spells however will play their animations on top of one another
 ``wynnSpells.anim_mode = "play_one"``, when another spell is cast, ignore it if any other spell animation is currently playing
+
+## Known limitations
+- If an input is sent by the client, but interrupted for whatever reason by the server (Opening a bank, clicking an NPC, etc), the spell tracking will desync. (It will fix itself after a short while)
+- I don't think it works with Wynntils' "invert spell controls"
 
 ## Log:
 ##### 2026-02-18: Uploaded it to github
