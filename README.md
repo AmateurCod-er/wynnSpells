@@ -21,7 +21,7 @@ The order in which things are called is as follows:
 
 10. Animation by Class-specific spell number ``e.g. "animations.model.Spell2:play()``
 11. Animation by Class-specific spell combo ``e.g. "animations.model.R:play()``
-- This will additionally try the reverse aswell ``e.g. "animations.model.L:play()"`, so the generics *should* work for all 5 classes
+- This will additionally try the reverse aswell ``e.g. "animations.model.L:play()"``, so the generics *should* work for all 5 classes
 
 ``"Spell name" as refered to by 1 and 4, are just the in-game-name, with spaces removed. (e.g. "ArrowBomb", "SmokeBomb", "Charge")``
 
