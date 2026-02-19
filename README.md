@@ -1,5 +1,5 @@
 # wynnSpells
-A very barebones script to register wynn spells to be used by Figura
+A very barebones script to register wynn spells to be used by Figura.
 It ain't perfect, but it's good enough for me
 
 ## How to use:
